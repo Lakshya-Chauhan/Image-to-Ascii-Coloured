@@ -55,7 +55,7 @@ while running == True:
     elif x >= 200:
         x=0
         y+=1
-        print(sentence)
-        sentence = ""
-    #Code Here
+        if sentence != "":
+            print(sentence)
+            sentence = ""
     pygame.display.update()
