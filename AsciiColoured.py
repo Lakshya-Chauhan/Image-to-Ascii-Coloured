@@ -12,7 +12,7 @@ updater = 0
 running = True
 clock = pygame.time.Clock()
 # img = pygame.transform.scale(pygame.image.load("Images/test11.png"), (200, 200))
-img = pygame.transform.scale(pygame.image.load("Images/240520012_388539089419359_4219417691054480737_n.jpg"), (200, 96))
+img = pygame.transform.scale(pygame.image.load("Images/test12.png"), (200, 96))
 screen.blit(img, (0, 0))
 
 chars = '█▓▒$@B%8&WM#*oahkbdpqwmZO0QLCJUYXzcvunxrjft/\|()1{}[]?-_+~<>i! lI;:,"^`\'. '
