@@ -21,7 +21,7 @@ x = 0
 y = 0
 sentence = ""
 while running == True:
-    clock.tick(60)
+    clock.tick(6000)
     for event in pygame.event.get():
         if event.type == pygame.QUIT:
             running = False
@@ -29,7 +29,7 @@ while running == True:
         pxlColor = screen.get_at((x,y))[:3]
         intensity = (sum(pxlColor))/len(pxlColor)
         try:
-            Ratio = [round(pxlColor[0]/max(pxlColor)), round(pxlColor[1]/max(pxlColor)), round(pxlColor[2]/max(pxlColor))]
+            Ratio = [round((pxlColor[0]/max(pxlColor))-0.2), round((pxlColor[1]/max(pxlColor))-0.2), round((pxlColor[2]/max(pxlColor))-0.2)]
         except:
             Ratio = [0, 0, 0]
             sentence += "\33[90m"
